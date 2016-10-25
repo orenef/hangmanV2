@@ -1,0 +1,16 @@
+{
+  "name": "hangman2",
+  "version": "1.0.0",
+  "description": "The hangman2 game in using TDD approach",
+  "main": "index.js",
+  "scripts": {
+    "test": "play"
+  },
+  "keywords": [
+    "game",
+    "es6",
+    "tdd"
+  ],
+  "author": "Oren",
+  "license": "ISC"
+}
