@@ -1,15 +1,22 @@
 const webpackConfig = require('./webpack.config.js');
-
+webpackConfig.module.postLoaders = [
+    {
+        test: [/\.js$/, /\.jsx$/],
+        exclude: [/node_modules/, /external_libraries/, /test/],
+        loader: 'istanbul-instrumenter'
+    }
+];
 module.exports = function (config) {
     config.set({
         basePath: '',
         singleRun: false,
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         files: ['test/**/*.spec.js'],
         frameworks: ['jasmine'],
         preprocessors: {
             '**/test/**/*.js': ['webpack'],
-            'app/**/*.js': ['coverage'],
+            '**/app/**/*.js': ['coverage'],
+            '**/src/**/*.js': ['coverage'],
         },
         webpack: webpackConfig,
         webpackServer: {

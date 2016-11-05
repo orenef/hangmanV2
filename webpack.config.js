@@ -1,14 +1,14 @@
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: ['babel-polyfill', './src/index.js'],
+    entry: ['babel-polyfill', './src/index.jsx'],
     output: {
         path: __dirname +'/app',
         filename: "bundle.js"
     },
     module: {
         loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+            { test: /\.(js|jsx)$/, exclude: /node_modules/, loader: "babel-loader" },
             { test: /\.css$/, loader: "style-loader!css-loader" },
             {
                 test: /\.html$/,
@@ -27,6 +27,8 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             { from: './src/view/index.html', to: 'index.html' },
-            { from: './src/view/numbers.jpg', to: 'numbers.jpg' }
-        ])]
+        ])],
+    resolve: {
+        extensions: ['', '.js', '.jsx'],
+    }
 };

@@ -2,59 +2,70 @@
     background: url('numbers.jpg') no-repeat 0 -8px;
     width: 161px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-1 {
     background: url('numbers.jpg') no-repeat -169px -15px;
     width: 114px;
     height: 205px;
+    margin: auto;
+
 }
 .stickman-number-of-guess-left-2 {
     background: url(numbers.jpg) no-repeat -280px -11px;
     width: 155px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-3 {
     background: url(numbers.jpg) no-repeat -440px -12px;
     width: 155px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-4 {
     background: url('numbers.jpg') no-repeat -623px -13px;
     width: 169px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-5 {
     background: url('numbers.jpg') no-repeat 0 -224px;
     width: 161px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-6 {
     background: url('numbers.jpg') no-repeat -173px -223px;
     width: 139px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-7 {
     background: url('numbers.jpg') no-repeat -319px -223px;
     width: 150px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-8 {
     background: url('numbers.jpg') no-repeat -475px -223px;
     width: 150px;
     height: 205px;
+    margin: auto;
 }
 
 .stickman-number-of-guess-left-9 {
     background: url('numbers.jpg') no-repeat -648px -222px;
     width: 144px;
     height: 205px;
+    margin: auto;
 }
 
 .mainScreen {
@@ -96,6 +107,7 @@
     width:700px;
     margin: 20px 50px 0 50px;
     display: flex;
+    justify-content: space-between
     /*-webkit-flex: 1;  !* Safari 6.1+ *!*/
     /*-ms-flex: 1;  !* IE 10 *!*/
     /*flex: 1;*/

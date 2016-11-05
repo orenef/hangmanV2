@@ -1,6 +1,4 @@
-/**
- * Created by Oren.Efraim on 10/26/2016.
- */
+
 var  stickmanConfig = {
     lives : 9,
     stickmanShowID: 'hangman-show',
