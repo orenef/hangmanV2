@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" type="text/css" href="./stickman.css">-->
+    <!--<script src="../controller/stickmanWordLogic.js"></script>-->
+</head>
+<body>
+<div id="mainScreen" class="mainScreen">
+    <div id="logo" class="logo">
+        <h1>The Hangman Game</h1>
+    </div>
+    <div id="hangman-show" class="hangman-show">
+    </div>
+    <div id="playword" class="playword">
+    </div>
+    <div id="guess-zone" class="guess-zone">
+        <div class="guess-zone-container">
+            <label class="guesszone-label">New letter:
+            </label>
+            <input id="guess" type="text" size="1" maxlength="1" class="guessbox" placeholder="_">
+            <input type="submit" class="submitbutton" id="submitL" value="submit">
+        </div>
+    </div>
+    <div id="alert-zone" class="alert-zone"></div>
+    <div class="refresh-button"><input type="button" onclick="window.location.reload(false)" value="reload game"></div>
+</div>
+</div>
+
+<script src="./bundle.js"></script>
+</body>
+</html>
